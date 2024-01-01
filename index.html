@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Youtube-clone</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <script src="https://kit.fontawesome.com/717d7108a4.js" crossorigin="anonymous"></script>    
+        <link rel="stylesheet" href="assetes/style.css" />
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        
+        
+    </head>
+    <body>
+        <!-- Header section start -->
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row justify-content-between px-3">
+                    <div class="col">
+                        <div class="d-flex align-items-center gap-3">
+                            <div>
+                                <button class="menu-open-btn">
+                                    <i class="fa-solid fa-bars"></i>
+                                </button>
+                            </div>
+
+                            <div>
+                                <img class="logo" src="./assetes/images/logo.png" alt="Logo" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col d-lg-none">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="input-group">
+                                <input type="text" class="search-input" name="search" id="search" placeholder="Search" />
+
+                                <button class="btn search-btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+
+                            <div>
+                                <button class="btn btn-circle" title="Voice">
+                                    <i class="fa-solid fa-microphone"></i>
+                                </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="col">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="d-xs-none">
+                                <button class="btn btn-circle bg-transparent" title="Video">
+                                    <i class="fa-solid fa-video"></i>
+                                </button>
+                            </div>
+
+                            <div class="d-xs-none">
+                                <button class="btn btn-circle bg-transparent" title="Notifications">
+                                    <i class="fa-regular fa-bell"></i>
+                                </button>
+                            </div>
+
+                            <div>
+                                <button class="btn btn-circle bg-transparent" title="Profile">
+                                    <i class="fa-regular fa-user"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header section end -->
+
+        <!-- Siderbar section start -->
+        <aside>
+            <div class="sidebar">
+                <button class="menu-close-btn">
+                    <i class="ph ph-x"></i>
+                </button>
+
+                <ul class="sidebar-menu overflow-y-scroll">
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link active">
+                            <div class="sidebar-menu-icon">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+
+                            <div class="sidebar-menu-text">
+                                Home
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <div class="sidebar-menu-icon">
+                                <i class="fa-brands fa-font-awesome"></i>
+                            </div>
+
+                            <div class="sidebar-menu-text">
+                                Sports
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <div class="sidebar-menu-icon">
+                                <i class="fa-solid fa-tv"></i>
+                            </div>
+
+                            <div class="sidebar-menu-text">
+                                Subscription
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-menu-divider"></li>
+
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <div class="sidebar-menu-icon">
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+
+                            <div class="sidebar-menu-text">
+                                Library
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <div class="sidebar-menu-icon">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+
+                            <div class="sidebar-menu-text">
+                                History
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <div class="sidebar-menu-icon">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                            <div class="sidebar-menu-text" >
+                                Your Videos
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <div class="sidebar-menu-icon">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div class="sidebar-menu-text" >
+                                Watch later
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <div class="sidebar-menu-icon">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                            <div class="sidebar-menu-text" >
+                                Liked Videos
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-menu-divider"></li>
+
+                    <li class="sidebar-menu-heading">Subscription</li>
+
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <div class="sidebar-menu-icon">
+                                <i class="fa-regular fa-circle-user"></i>
+                            </div>
+                            <div class="sidebar-menu-text" >
+                                Aleena Rais Live
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-menu-divider"></li>
+
+                    <li class="sidebar-menu-heading">Explore</li>
+
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <div class="sidebar-menu-icon">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                            </div>
+                            <div class="sidebar-menu-text" >
+                                Trending
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <div class="sidebar-menu-icon">
+                                <i class="fa-solid fa-music"></i>
+                            </div>
+                            <div class="sidebar-menu-text" >
+                                Music
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <div class="sidebar-menu-icon">
+                                <i class="fa-solid fa-gamepad"></i>
+                            </div>
+                            <div class="sidebar-menu-text" >
+                                Gameing
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <div class="sidebar-menu-icon">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                            <div class="sidebar-menu-text" >
+                                Sports
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- Sidebar section start -->
+
+        <main class="main">
+            <!-- Category section start -->
+            <section class="categories-section py-3">
+                <div class="d-flex align-items-center gap-3 overflow-x-scroll">
+                    <a href="#" class="btn btn-secondary active">All</a>
+                    <a href="#" class="btn btn-secondary">Mixes</a>
+                    <a href="#" class="btn btn-secondary">Music</a>
+                    <a href="#" class="btn btn-secondary">Reservation</a>
+                    <a href="#" class="btn btn-secondary">Lo-fi</a>
+                    <a href="#" class="btn btn-secondary">Filmi</a>
+                    <a href="#" class="btn btn-secondary">Natok</a>
+                    <a href="#" class="btn btn-secondary">Mixes</a>
+                    <a href="#" class="btn btn-secondary">Music</a>
+                    <a href="#" class="btn btn-secondary">Reservation</a>
+                    <a href="#" class="btn btn-secondary">Lo-fi</a>
+                    <a href="#" class="btn btn-secondary">Filmi</a>
+                    <a href="#" class="btn btn-secondary">Natok</a>
+                    <a href="#" class="btn btn-secondary">Mixes</a>
+                    <a href="#" class="btn btn-secondary">Music</a>
+                    <a href="#" class="btn btn-secondary">Reservation</a>
+                    <a href="#" class="btn btn-secondary">Lo-fi</a>
+                    <a href="#" class="btn btn-secondary">Filmi</a>
+                    <a href="#" class="btn btn-secondary">Natok</a>
+                </div>
+            </section>
+            <!-- Category section end -->
+
+            <!-- Category section start -->
+            <section class="videos-section px-3 mt-5">
+                <div class="d-grid grid-cols-4 grid-cols-xl-3 grid-cols-lg-2 grid-cols-sm-1 gap-3">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assetes/images/videos/card-1.jpg" alt="Image" />
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <div class="card-user-img">
+                                <img src="./assetes/images/user-icon.png" alt="Image" />
+                            </div>
+
+                            <div>
+                                <div class="card-title">Card Title</div>
+                                <div class="card-sub-title">Card Sub Title</div>
+                                <div class="card-meta">1m views . 1 month ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assetes/images/videos/card-1.jpg" alt="Image" />
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <div class="card-user-img">
+                                <img src="./assetes/images/user-icon.png" alt="Image" />
+                            </div>
+
+                            <div>
+                                <div class="card-title">Card Title</div>
+                                <div class="card-sub-title">Card Sub Title</div>
+                                <div class="card-meta">1m views . 1 month ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assetes/images/videos/card-1.jpg" alt="Image" />
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <div class="card-user-img">
+                                <img src="./assetes/images/user-icon.png" alt="Image" />
+                            </div>
+
+                            <div>
+                                <div class="card-title">Card Title</div>
+                                <div class="card-sub-title">Card Sub Title</div>
+                                <div class="card-meta">1m views . 1 month ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assetes/images/videos/card-1.jpg" alt="Image" />
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <div class="card-user-img">
+                                <img src="./assetes/images/user-icon.png" alt="Image" />
+                            </div>
+
+                            <div>
+                                <div class="card-title">Card Title</div>
+                                <div class="card-sub-title">Card Sub Title</div>
+                                <div class="card-meta">1m views . 1 month ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assetes/images/videos/card-1.jpg" alt="Image" />
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <div class="card-user-img">
+                                <img src="./assetes/images/user-icon.png" alt="Image" />
+                            </div>
+
+                            <div>
+                                <div class="card-title">Card Title</div>
+                                <div class="card-sub-title">Card Sub Title</div>
+                                <div class="card-meta">1m views . 1 month ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assetes/images/videos/card-1.jpg" alt="Image" />
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <div class="card-user-img">
+                                <img src="./assetes/images/user-icon.png" alt="Image" />
+                            </div>
+
+                            <div>
+                                <div class="card-title">Card Title</div>
+                                <div class="card-sub-title">Card Sub Title</div>
+                                <div class="card-meta">1m views . 1 month ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assetes/images/videos/card-1.jpg" alt="Image" />
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <div class="card-user-img">
+                                <img src="./assetes/images/user-icon.png" alt="Image" />
+                            </div>
+
+                            <div>
+                                <div class="card-title">Card Title</div>
+                                <div class="card-sub-title">Card Sub Title</div>
+                                <div class="card-meta">1m views . 1 month ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assetes/images/videos/card-1.jpg" alt="Image" />
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <div class="card-user-img">
+                                <img src="./assetes/images/user-icon.png" alt="Image" />
+                            </div>
+
+                            <div>
+                                <div class="card-title">Card Title</div>
+                                <div class="card-sub-title">Card Sub Title</div>
+                                <div class="card-meta">1m views . 1 month ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Category section end -->
+        </main>
+
+        <footer class="footer">
+            <div class="px-3 my-5">
+                <div class="d-flex flex-wrap justify-content-between p-5 rounded border">
+                    <div class="footer-menu">
+                        <ul>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Terms and Condition</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Privacy and Policy</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        Copyright &copy; 2023 <a href="#">youtube-clone.com</a>. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./assetes/main.js"></script>
+    </body>
+</html>
